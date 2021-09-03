@@ -26,7 +26,7 @@ namespace {
 
 INSTANTIATE_TEST_CASE_P(ResourceTests,
                         mr_test,
-                        ::testing::Values(mr_factory{"CUDA", &make_cuda},
+                        ::testing::Values(mr_factory{"CUDA_VER", &make_cuda},
 #ifdef RMM_CUDA_MALLOC_ASYNC_SUPPORT
                                           mr_factory{"CUDA_Async", &make_cuda_async},
 #endif

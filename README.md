@@ -562,7 +562,7 @@ be detected by CUDA tools such as
 [CUDA Compute Sanitizer](https://docs.nvidia.com/cuda/compute-sanitizer/index.html) memcheck.
 
 Exceptions to this are `cuda_memory_resource`, which wraps `cudaMalloc`, and 
-`cuda_async_memory_resource`, which uses `cudaMallocAsync` with CUDA's built-in memory pool 
+`cuda_async_memory_resource`, which uses `cudaMallocAsync` with CUDA_VER's built-in memory pool 
 functionality (CUDA 11.2 or later required). Illegal memory accesses to memory allocated by these 
 resources are detectable with Compute Sanitizer Memcheck.
 

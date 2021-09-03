@@ -37,7 +37,7 @@ struct mr_test_mt : public mr_test {
 
 INSTANTIATE_TEST_CASE_P(MultiThreadResourceTests,
                         mr_test_mt,
-                        ::testing::Values(mr_factory{"CUDA", &make_cuda},
+                        ::testing::Values(mr_factory{"CUDA_VER", &make_cuda},
                                           mr_factory{"Managed", &make_managed},
                                           mr_factory{"Pool", &make_pool},
                                           mr_factory{"Arena", &make_arena},

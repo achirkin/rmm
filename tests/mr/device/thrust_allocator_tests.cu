@@ -34,7 +34,7 @@ TEST_P(allocator_test, first)
 
 INSTANTIATE_TEST_CASE_P(ThrustAllocatorTests,
                         allocator_test,
-                        ::testing::Values(mr_factory{"CUDA", &make_cuda},
+                        ::testing::Values(mr_factory{"CUDA_VER", &make_cuda},
                                           mr_factory{"Managed", &make_managed},
                                           mr_factory{"Pool", &make_pool},
                                           mr_factory{"Binning", &make_binning}),
